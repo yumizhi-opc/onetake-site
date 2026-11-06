@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>One Take — User Guide</title><style>body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;max-width:780px;margin:40px auto;padding:0 22px;background:#0b0c0e;color:#e9ecef;line-height:1.65}h1,h2,h3{color:#a7f3cf}a{color:#a7f3cf}code{background:#1b1e22;padding:2px 5px;border-radius:4px}</style></head><body><h1>One Take — User Guide</h1>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>One Take — User Guide</title><style>body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;max-width:780px;margin:40px auto;padding:0 22px;background:#0b0c0e;color:#e9ecef;line-height:1.65}h1,h2,h3{color:#a7f3cf}a{color:#a7f3cf}</style></head><body><h1>One Take — User Guide</h1>
 <p>One Take is a pose camera. Pick a reference pose, align your body to the live mint outline, and shoot. No account is required. Camera frames are processed on-device with Apple Vision; there are no ads.</p>
 <h2>Part 1 — Camera &amp; App Guide</h2>
 <h3>1. Open the camera</h3>
@@ -19,12 +19,13 @@
 <h3>3. Use the overlay</h3>
 <p>The overlay keeps its own proportions inside the camera frame.</p>
 <ul>
-<li>**Tap the overlay** to show four handles.</li>
-<li>**Top-left** — rotate left/right (up to ±45°).</li>
-<li>**Top-right** — move up/down/left/right. The guide cannot leave the camera frame.</li>
-<li>**Bottom-right** — proportional scale from 0.5× to the maximum that fits the frame. Scaling is anchored at the opposite corner.</li>
-<li>**Bottom-left** — reset.</li>
-<li>Drag the eye button to hide or show the guide.</li>
+<li>Handles are always visible; there is no tap-to-show/hide.</li>
+<li>**Top-left** — move up/down/left/right. The guide cannot leave the camera frame.</li>
+<li>**Top-right** — proportional scale from **0.5× to 1.0×** (B1; the guide starts at maximum fit and cannot zoom beyond it). Scaling is anchored at the guide center.</li>
+<li>**Bottom-right** — reset.</li>
+<li>**Bottom-left** — none.</li>
+<li>There is **no rotate** gesture.</li>
+<li>Portrait / Square poses keep the app in portrait. A Horizontal pose switches the UI to landscapeRight after selection; the picker stays portrait until then.</li>
 <li>The guide position is only for the current shot. Choosing a different pose resets it; the pose menu default is never changed.</li>
 </ul>
 <h3>4. Align and shoot</h3>
