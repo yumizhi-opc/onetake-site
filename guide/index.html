@@ -2,12 +2,11 @@
 <p>One Take is a pose camera. Pick a reference pose, align your body to the live mint outline, and shoot. No account is required. Camera frames are processed on-device with Apple Vision; there are no ads.</p>
 <h2>Part 1 — Camera &amp; App Guide</h2>
 <h3>1. Open the camera</h3>
-<p>Open One Take and allow camera access. The camera opens on the main (1×) lens with the <strong>full native sensor frame</strong>, never a crop-to-fill preview.</p>
+<p>Open One Take and allow camera access. The camera opens on the main (1×) lens with a fixed <strong>portrait 3:4 frame</strong>, never a crop-to-fill preview.</p>
 <ul>
-<li>Portrait / Square poses: portrait camera frame is **3:4**; screen space above/below is letterboxed.</li>
-<li>Horizontal poses: forced landscape, camera frame is **4:3**; unused screen space is letterboxed left/right.</li>
-<li>Square (1:1) poses: the preview becomes a centered 1:1 crop on both cameras.</li>
-<li>The full native sensor photo is saved for every shot.</li>
+<li>Portrait, Square and Horizontal poses all use the same portrait layout.</li>
+<li>Horizontal poses are selected in portrait; the UI does not rotate.</li>
+<li>The full native camera frame is saved for every shot.</li>
 </ul>
 <h3>2. Pick a pose</h3>
 <p>Tap <strong>Poses</strong> (bottom of the camera). Choose:</p>
@@ -26,7 +25,8 @@
 <li>**Bottom-left** — reset.</li>
 <li>**Bottom-right** — horizontal flip (mirror around the center axis).</li>
 <li>There is **no rotate** gesture.</li>
-<li>Portrait / Square poses keep the app in portrait. A Horizontal pose switches the UI to landscape after selection; the picker stays portrait until then.</li>
+<li>Portrait, Square and Horizontal poses all keep the same portrait layout. Only the camera icon turns sideways for a Horizontal pose.</li>
+<li>The pose picker is always portrait.</li>
 <li>The guide position is only for the current shot. Choosing a different pose resets it; the pose menu default is never changed.</li>
 </ul>
 <h3>4. Align and shoot</h3>
@@ -42,7 +42,7 @@
 <li>The camera stays on the captured **crop**.</li>
 <li>Every shot saves two images to the app Gallery and iOS Photos:</li>
 </ul>
-<p>  1. Native full frame (portrait 3:4 / horizontal 4:3)</p>
+<p>  1. Native full frame (portrait 3:4)</p>
 <p>  2. Overlay crop</p>
 <ul>
 <li>Choose **Back to Camera** or **Gallery**. There is no automatic return and no retake/delete flow.</li>
@@ -80,7 +80,7 @@
 </ul>
 <h2>FAQ</h2>
 <p><strong>Why is there a black bar around the camera?</strong>  </p>
-<p>The app shows the camera&#x27;s full native frame. In portrait that is 3:4 (top/bottom bars); in horizontal it is 4:3 (left/right bars). It does not crop or stretch to fill the phone screen.</p>
+<p>The app shows a fixed portrait 3:4 camera frame. It does not crop or stretch to fill the phone screen.</p>
 <p><strong>Why did the outline not capture automatically?</strong>  </p>
 <p>Auto-capture needs a clear body view and about 0.8 seconds of stability. Some poses are reference-only and always use the manual shutter.</p>
 <p><strong>Why do I see two photos?</strong>  </p>
