@@ -2,11 +2,12 @@
 <p>One Take is a pose camera. Pick a reference pose, align your body to the live mint outline, and shoot. No account is required. Camera frames are processed on-device with Apple Vision; there are no ads.</p>
 <h2>Part 1 — Camera &amp; App Guide</h2>
 <h3>1. Open the camera</h3>
-<p>Open One Take and allow camera access. The camera opens on the main (1×) lens with a fixed <strong>portrait 3:4 frame</strong>, never a crop-to-fill preview.</p>
+<p>Open One Take and allow camera access. The camera opens on the main (1×) lens.</p>
 <ul>
-<li>Portrait, Square and Horizontal poses all use the same portrait layout.</li>
-<li>Horizontal poses are selected in portrait; the UI does not rotate.</li>
-<li>The full native camera frame is saved for every shot.</li>
+<li>Portrait and Square poses use a **3:4 portrait camera frame**.</li>
+<li>Horizontal poses rotate the **live camera preview and overlay 90°** into a 2:3 portrait frame, maximising the screen.</li>
+<li>The app layout and pose menu stay portrait; menu cards keep their natural orientation.</li>
+<li>The full camera frame is saved for every shot.</li>
 </ul>
 <h3>2. Pick a pose</h3>
 <p>Tap <strong>Poses</strong> (bottom of the camera). Choose:</p>
@@ -25,7 +26,8 @@
 <li>**Bottom-left** — reset.</li>
 <li>**Bottom-right** — horizontal flip (mirror around the center axis).</li>
 <li>There is **no rotate** gesture.</li>
-<li>Portrait, Square and Horizontal poses all keep the same portrait layout. Only the camera icon turns sideways for a Horizontal pose.</li>
+<li>Portrait and Square keep the portrait preview.</li>
+<li>Horizontal rotates only the live camera preview and overlay; all controls stay in the portrait layout. The camera icon turns sideways.</li>
 <li>The pose picker is always portrait.</li>
 <li>The guide position is only for the current shot. Choosing a different pose resets it; the pose menu default is never changed.</li>
 </ul>
@@ -42,7 +44,7 @@
 <li>The camera stays on the captured **crop**.</li>
 <li>Every shot saves two images to the app Gallery and iOS Photos:</li>
 </ul>
-<p>  1. Native full frame (portrait 3:4)</p>
+<p>  1. Native full frame (portrait 3:4; Horizontal preview is presented 2:3)</p>
 <p>  2. Overlay crop</p>
 <ul>
 <li>Choose **Back to Camera** or **Gallery**. There is no automatic return and no retake/delete flow.</li>
