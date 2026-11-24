@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://yumizhi-opc.github.io/onetake-site/sitemap.xml
